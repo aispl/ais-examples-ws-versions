@@ -1,0 +1,34 @@
+package pl.ais.examples.ws.versions.v2.model;
+
+import javax.xml.bind.annotation.XmlType;
+
+import com.sun.xml.txw2.annotation.XmlAttribute;
+
+import pl.ais.examples.ws.versions.model.ContactSpec;
+
+@XmlType(propOrder = {"firstName", "lastName"})
+public class Contact implements ContactSpec {
+
+  private String firstName;
+  private String lastName;
+
+  @XmlAttribute("firstName")
+  @Override
+  public String getFirstName() {
+    return firstName;
+  }
+
+  public void setFirstName(String firstName) {
+    this.firstName = firstName;
+  }
+
+  @XmlAttribute("lastName")
+  @Override
+  public String getLastName() {
+    return lastName;
+  }
+
+  public void setLastName(String lastName) {
+    this.lastName = lastName;
+  }
+}

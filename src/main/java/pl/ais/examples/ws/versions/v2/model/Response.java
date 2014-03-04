@@ -1,4 +1,4 @@
-package pl.ais.examples.ws.versions.v1.model;
+package pl.ais.examples.ws.versions.v2.model;
 
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;

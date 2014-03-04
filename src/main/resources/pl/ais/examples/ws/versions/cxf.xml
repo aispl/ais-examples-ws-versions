@@ -10,7 +10,10 @@
 
   <context:component-scan base-package="pl.ais.examples.ws.versions.v1.services"/>
 
-
   <jaxws:endpoint implementor="#ProcessorV1" address="/soap/v1/Processor" />
+
+  <context:component-scan base-package="pl.ais.examples.ws.versions.v2.services"/>
+
+  <jaxws:endpoint implementor="#ProcessorV2" address="/soap/v2/Processor" />
 
 </beans>

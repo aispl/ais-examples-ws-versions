@@ -1,5 +1,6 @@
 package pl.ais.examples.ws.versions.v1.model;
 
+import javax.xml.bind.annotation.XmlTransient;
 import javax.xml.bind.annotation.XmlType;
 
 import com.sun.xml.txw2.annotation.XmlAttribute;
@@ -12,7 +13,6 @@ public class Contact implements ContactSpec {
   private String name;
 
   @XmlAttribute("name")
-  @Override
   public String getName() {
     return name;
   }
@@ -20,4 +20,18 @@ public class Contact implements ContactSpec {
   public void setName(String name) {
     this.name = name;
   }
+
+  @XmlTransient
+  @Override
+  public String getFirstName() {
+    return null;
+  }
+
+  @XmlTransient
+  @Override
+  public String getLastName() {
+    return name;
+  }
+
+
 }
