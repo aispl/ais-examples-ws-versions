@@ -8,11 +8,11 @@
       http://cxf.apache.org/jaxrs http://cxf.apache.org/schemas/jaxrs.xsd
       http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
 
-  <jaxws:endpoint implementor="#ProcessorV2" address="/soap/v2/Processor" />
+  <jaxws:endpoint implementor="#ProcessorV1" address="/soap/v1/Processor" />
 
-  <jaxrs:server id="restContainerV2" address="/rest/v2">
+  <jaxrs:server id="restContainerV1" address="/rest/v1">
     <jaxrs:serviceBeans>
-      <ref bean="ProcessorV2" />
+      <ref bean="ProcessorV1" />
     </jaxrs:serviceBeans>
     <jaxrs:providers>
       <bean class="org.apache.cxf.jaxrs.provider.json.JSONProvider">
