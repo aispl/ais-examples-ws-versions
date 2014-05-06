@@ -11,7 +11,7 @@ public class Contact implements ContactSpec {
 
   private String name;
 
-  @XmlAttribute("name")
+  @XmlAttribute(name = "name")
   public String getName() {
     return name;
   }

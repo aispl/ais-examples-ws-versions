@@ -11,7 +11,7 @@ public class Contact implements ContactSpec {
   private String firstName;
   private String lastName;
 
-  @XmlAttribute("firstName")
+  @XmlAttribute(name = "firstName")
   @Override
   public String getFirstName() {
     return firstName;
@@ -21,7 +21,7 @@ public class Contact implements ContactSpec {
     this.firstName = firstName;
   }
 
-  @XmlAttribute("lastName")
+  @XmlAttribute(name = "lastName")
   @Override
   public String getLastName() {
     return lastName;
