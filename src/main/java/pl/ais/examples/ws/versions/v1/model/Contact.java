@@ -1,9 +1,8 @@
 package pl.ais.examples.ws.versions.v1.model;
 
+import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlTransient;
 import javax.xml.bind.annotation.XmlType;
-
-import com.sun.xml.txw2.annotation.XmlAttribute;
 
 import pl.ais.examples.ws.versions.model.ContactSpec;
 
