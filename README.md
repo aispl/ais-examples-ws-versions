@@ -22,4 +22,4 @@ Internal model is defined in `pl.ais.examples.ws.versions.model` package and it'
 Implementation details
 ----------------------
 
-`ProcessorService`'s `service` method returns `void` and accepts `response` as one of it's arguments. That's because `ProcessorService` should use only interfaces {from `pl.ais.examples.ws.versions.model` package), not version-related classes.
+`ProcessorService`'s `service` method returns `void` and accepts `response` as one of it's arguments. That's because `ProcessorService` should use only interfaces (from `pl.ais.examples.ws.versions.model` package), not version-related classes.
