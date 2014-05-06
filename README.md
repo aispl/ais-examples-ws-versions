@@ -2,7 +2,9 @@ Versioned web services example
 ==============================
 
 Application provides two versions of `Processor` service.
+
 In `V1` version it accepts `Contact` object with `name` attribute.
+
 For `V2` verstion `name` attribute was removed from `Contact` object and `firstName` and `lastName` attributes were added.
 Of course `V1` clients are not compatible with `V2` clients and vice-versa but, since both versions are provided in parallel, clients may migrate from `V1` to `V2`.
 
